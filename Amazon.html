@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-blue-900 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Amazon Clone</h1>
+        <nav>
+            <a href="index.html" class="mr-4">Home</a>
+            <a href="product-list.html" class="mr-4">Products</a>
+            <a href="cart.html" class="mr-4">Cart</a>
+            <a href="login.html" class="mr-4">Login</a>
+        </nav>
+    </header>
+    <main class="p-4">
+        <section class="carousel">
+            <img src="https://source.unsplash.com/random/800x400?tech" alt="Banner" class="w-full h-64 object-cover">
+        </section>
+        <section class="featured-products mt-8">
+            <h2 class="text-xl font-bold mb-4">Featured Products</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <!-- Product Card -->
+                <div class="product-card bg-white p-4 rounded shadow">
+                    <img src="https://source.unsplash.com/random/200x200?product" alt="Product Image" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-lg font-semibold">Product Title</h3>
+                    <p class="text-gray-500">$99.99</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Add to Cart</button>
+                </div>
+                <!-- Repeat Product Card for more products -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white p-4 text-center">
+        &copy; 2024 Amazon Clone. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
